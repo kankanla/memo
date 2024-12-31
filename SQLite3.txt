@@ -222,6 +222,11 @@ typeof 						値のデータ型を取得
 sqlite_version 					SQLiteのバージョンを取得
 
 
+SQLiteでも同様に、時間ごとにグループ化するにはGROUP BY句を使用します。SQLiteにはHOUR()関数がないため、strftime()関数を利用して時間部分を抽出します。
+MySQL
+InTimeカラムの値を基準にして、時間ごとにデータをグループ化するには、GROUP BY句を使用します。ただし、InTimeカラムがTIME型の場合、1時間単位でのグループ化を行うにはHOUR()関数を使います。
+
+
 
 
 CREATE VIEW tp5 as select * from qeid where strftime('%s','now')-time<86400 orde
