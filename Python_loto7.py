@@ -593,7 +593,7 @@ def t7():
 
 
 # t7()
-
+# takadababa66o2
 
 # t6()
 # bas2([3,21])  # 9 or 11
@@ -698,6 +698,7 @@ def fcck(fcc):
     cursor1 = conn.cursor()
     cursor2 = conn.cursor()
     sql1 = "select s1,s2,s3,s4,s5,s6,s7,rowid from alll7;"
+    sql1 = "select s1,s2,s3,s4,s5,s6,s7,rowid from alll7 where t1 > 533;"
     cursor1.execute(sql1)
     while True:
         re1 = cursor1.fetchone()
@@ -886,7 +887,7 @@ def numscount():
     # sql = 'select loto7.s1,loto7.s2,loto7.s3,loto7.s4,loto7.s5,loto7.s6,loto7.s7 from loto7 join alll7 on loto7.z1= alll7.id where alll7.fcck5>3 '
     # sql = 'select s1,s2,s3,s4 from fcck374 where fcck =4'
     # sql = 'select s1,s2,s3,s4,s5,s6,s7 from loto7 limit 20'
-    sql = "select s1,s2,s3,s4,s5,s6,s7 from loto7 where t1 > 513"
+    sql = "select s1,s2,s3,s4,s5,s6,s7 from loto7 where t1 > 533"
     # sql = "select s1,s2,s3 from fcck37 where fcck > 1"
     # sql = "select s1 ,s2 from fcck372 where fcck = 9"
     # sql = "select s1,s2,s3 from fcck37 where s1=12 and fcck > 4"
@@ -957,9 +958,11 @@ t7()
 # tag = [1,3,6,13,14,26,29,31,32,34,35,36]
 # tag = [5  , 8  , 15 , 26 , 32 , 34 , 36]
 # tag = [11,14,17,18,21,25,31]
+# tag = [11,15,18,22,23,30,36]
+
 # nfcck(tag, 0)
 # nfcck2(tag, 0)
-# qqq(525)
+# qqq(534)
 # numscount()
 # ta()
 # qf()
