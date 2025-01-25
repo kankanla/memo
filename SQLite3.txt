@@ -141,6 +141,8 @@ SELECT カラム名, ... FROM テーブル名 GROUP BY カラム名, ... HAVING 
 	FROM pcrework
 	GROUP BY soNo
 	HAVING SUM(CASE WHEN SerialNo IS NOT NULL THEN 1 ELSE 0 END) = 0;
+	** GROUP BY を使用した場合、HAVING に書く条件は通常、集計関数（例：SUM, COUNT, MAX など）を
+	   使って指定します。SerialNo は個別の行データなので、HAVING で直接条件に使用することはできません。
 
 SELECT テーブル名.カラム名, ... FROM テーブル名1 INNER JOIN テーブル名2 ON テーブル名1.カラム名1 = テーブル名2.カラム名2;
 SELECT テーブル名.カラム名, ... FROM テーブル名1 LEFT OUTER JOIN テーブル名2 ON テーブル名1.カラム名1 = テーブル名2.カラム名2;
